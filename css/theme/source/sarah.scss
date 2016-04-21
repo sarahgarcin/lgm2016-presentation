@@ -1,0 +1,189 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/interval/interval.css);
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(https://fonts.googleapis.com/css?family=Interval:400,400italic,700,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: rgb(0,0,255);
+
+$mainFontSize: 2.5em;
+$mainFont: 'Interval', Helvetica, sans-serif;
+$headingFont: 'Interval', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: rgb(0,0,255);
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.5em;
+$heading3Size: 0.8em;
+$heading4Size: 0.9em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+li{
+	//list-style:none;
+	padding: 5px !important;
+}
+
+a{
+	text-decoration: underline !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+	text-transform: none !important;
+}
+img + p{
+ margin-top: 0 !important;
+}
+
+h3{
+	margin-left: -15% !important;
+}
+h3.normal{
+	margin-left: 0 !important;
+}
+
+h2{
+	margin-bottom: 50px !important;
+}
+h4{
+	text-decoration: underline;
+	margin-bottom: 10px !important;
+	margin-top: 20px !important;
+}
+
+.reveal .slides{
+	text-align:left;
+}
+
+
+.columns{
+	// display: inline-block;
+	vertical-align: bottom !important;
+	float: left;
+	margin-left: 10% !important;
+	&.col-2{
+		width: 40%;
+	}
+	&.book{
+		margin-top: 70px;
+		img{margin-bottom: 150px;}
+	}
+}
+
+.citation{
+	width: 80%;
+	text-align: justify;
+	margin: auto !important;
+	&.no-justify{
+		text-align: left;
+	}
+}
+
+.references{
+	width: 90%;
+	text-decoration: underline;
+	text-align: right;
+	margin-top: 100px !important; 
+}
+
+.reveal {
+	section{
+	 img{
+	 	width: 100%;
+	 	max-width: 100%;
+	 	border:none !important;
+	 	box-shadow: none !important;
+	 	&.img-w2{
+			width: 49%;
+			margin:auto;
+		}
+		&.img-w1b{
+			width: 70%;
+			margin:auto;
+		}
+	 }
+	}
+}
+
+.inline{
+	width: 45% !important;
+	display:inline-block;
+	vertical-align:top !important;
+	margin-right:30px !important;
+}
+
+.ola-logo{
+	margin-left: -25% !important;
+}
+
+.outils{
+	margin-left: 60px !important;
+	margin-bottom: 70px !important;
+}
+
+.merci{
+	text-align: center !important;
+}
+
+.text-petit{
+	p, a, li{
+		font-size: 0.8em !important;
+	}
+}
+
+.text-tout-petit{
+	p, a, li{
+		font-size: 0.7em !important;
+	}
+}
+
+.no-li-style{
+	li{
+		list-style: none;
+	}
+}
+
+.full-references{
+	color:#FFF;
+	//margin-top: -40% !important;
+	margin-left: -20% !important;
+	text-decoration: underline;
+	width: 20%;
+	font-size: 0.6em !important;
+}
+
+.center{
+	text-align: center;
+}
+
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

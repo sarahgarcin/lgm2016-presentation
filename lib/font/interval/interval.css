@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'interval';
+    src: url('interval-webfont.eot');
+    src: url('interval-webfont.eot?#iefix') format('embedded-opentype'),
+         url('interval-webfont.woff') format('woff'),
+         url('interval-webfont.ttf') format('truetype'),
+         url('interval-webfont.svg#FontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
